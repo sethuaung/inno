@@ -1,5 +1,5 @@
-# sg.github.io
-Smilax Global
+# inno.github.io
+Inno Capital Microfinance
 
 ### The MIT License (MIT)
 
