@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Felixent's Template</title>
+<meta charset="UTF-8">
+<!-- Define keywords for search engines: -->
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<!-- Define a description of your web page: -->
+<meta name="description" content="Felixent's Web Templates for HTML and CSS">
+<!-- Define the author of a page: -->
+<meta name="author" content="Mosquito">
+<!-- Refresh document every 30 seconds: -->
+<meta http-equiv="refresh" content="30">
+<!-- Redirect document after 30 seconds: -->
+<!-- <meta http-equiv="refresh" content="30;URL='https://www.google.com/'" /> -->
+<!-- Setting the viewport to make your website look good on all devices: -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Favicons -->
+<link href="images/logo/inno-logo.ico" rel="icon">
+<link href="images/logo/inno-fav.jpg" rel="felix-logo">
+
+<!-- rabbit-converter Start -->
+<script src="js/rabbit.js"></script>
+<link rel="stylesheet" href="css/rabbitstyle.css">
+<script type="text/javascript">
+  function clearText() {
+    document.getElementById("unicode").value = "";
+    document.getElementById("zawgyi").value = ""
+  }
+</script>
+<!-- rabbit-converter End -->
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="indexM.html#home" class="w3-bar-item w3-button"><b>INCMF</b> Inno Capital Microfinance</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="indexM.html#project1" class="w3-bar-item w3-button">Project-1</a>
+      <a href="indexM.html#project2" class="w3-bar-item w3-button">Project-2</a>
+      <a href="indexM.html#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>INCMF</b></span> <span class="w3-hide-small w3-text-light-grey">Inno Capital Microfinance</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+ <!-- Start Here -->
+ <div class="w3-light-grey w3-container" style="min-height:800px" id="font-changer">
+  <div class="w3-padding-8 w3-center">
+    <h2>Fonts Changer... </h2>
+    <p>Zawgyi to Unicode, Unicode to Zawgyi Converter </p>
+    <p class="w3-text-green"><b>Unicode-Fonts <=> Zawgyi-Fonts</b></p>
+    <div class="w3-container w3-responsive">
+      <table class="w3-table">
+        
+        <tr class="w3-white">
+        <td>
+          <div class="stylesheet w3-responsive w3-center">
+            <section id="Unicode">
+            <h3>Unicode</h3>
+            <textarea id="unicode" onfocus="handleOnFocus(this)" onblur="handleOnBlur()">မပျံသန်းနိုင်ရင် ပြေးပါ၊ မပြေးနိုင်ရင် လမ်းလျှောက်ပါ၊ လမ်းမလျှောက်နိုင်ရင် တွားသွားပါ၊ ဒါပေမယ့် ဘာပဲလုပ်လုပ် ရှေ့ကို ဆက်သွားရပါမယ်။ </textarea>
+            </section>
+          </div>
+        </td>
+        <br>  
+        </tr>
+        <tr class="w3-white">
+          <td>
+            <div class="stylesheet w3-responsive w3-center">
+            <section id="Zawgyi">
+            <h3>Zawgyi</h3>
+            <textarea id="zawgyi" onfocus="handleOnFocus(this)" onblur="handleOnBlur()">မပ်ံသန္းႏိုင္ရင္ ေျပးပါ၊ မေျပးႏိုင္ရင္ လမ္းေလွ်ာက္ပါ၊ လမ္းမေလွ်ာက္ႏိုင္ရင္ တြားသြားပါ၊ ဒါေပမယ့္ ဘာပဲလုပ္လုပ္ ေရွ႕ကို ဆက္သြားရပါမယ္။ </textarea>
+            </section>
+            </div>
+          </td>
+          
+        </tr>
+        <tr>
+          <td>
+            <div class="w3-container w3-center">
+              <section id="buttons">
+                  <input type="button" value="Clear Text" onclick="clearText()">
+                  <input type="button" value="Copy Zawgyi" onclick="copyZawgyi()">
+                  <input type="button" value="Copy Unicode" onclick="copyUnicode()">
+              </section>
+            </div>
+          </td>
+        </tr>
+        
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Themes Designed by <a href="https://sethuaung.guthub.io" title="mosquito" target="_blank" class="w3-hover-text-green">mosquito</a></p>
+</footer>
+
+</body>
+<!-- rabbit-converter script - Start-->
+<script>
+
+  var textFieldInFocus;
+  function handleOnFocus(form_element)
+  {
+     textFieldInFocus = form_element;
+  }
+  function handleOnBlur()
+  {
+     textFieldInFocus = null;
+  }
+  
+  var unicode = document.getElementById("unicode");
+  var zawgyi = document.getElementById("zawgyi");
+  
+  onchangeHandler(unicode,zawgyi,"uni2zg");
+  onchangeHandler(zawgyi,unicode,"zg2uni");
+  
+  function converter(textField,tochangeField,toconv) {
+      if(tochangeField != textFieldInFocus) {
+          if(toconv == "uni2zg") {
+                tochangeField.value = Rabbit.uni2zg(textField.value);
+          }
+          else {
+               tochangeField.value = Rabbit.zg2uni(textField.value);
+          }
+      }
+  }
+  
+  function onchangeHandler(textField,tochangeField,toconv) {
+      
+      if (textField.addEventListener) {
+        textField.addEventListener('input', function() {
+            converter(textField,tochangeField,toconv);
+        }, false);
+      } else if (textField.attachEvent) {
+        textField.attachEvent('onpropertychange', function() {
+          // IE
+            converter(textField,tochangeField,toconv);
+        });
+      }
+      
+  }
+  
+  function copyZawgyi() {
+    /* Get the text field */
+    var copyText = document.getElementById("zawgyi");
+  
+    /* Select the text field */
+    copyText.select(); 
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  }
+  
+  function copyUnicode() {
+    /* Get the text field */
+    var copyText = document.getElementById("unicode");
+  
+    /* Select the text field */
+    copyText.select(); 
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  }
+  </script>
+<!-- rabbit-converter script - End -->
+</html>
