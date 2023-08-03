@@ -76,7 +76,18 @@
 
 <!-- End page content -->
 </div>
-
+<script type="text/javascript">
+  function checkPswd() {
+      var confirmPassword = "root";
+      var password = document.getElementById("pswd").value;
+      if (password == confirmPassword) {
+           window.location="index-sysM.html";
+      }
+      else{
+          alert("Passwords do not match.");
+      }
+  }
+</script> 
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">

@@ -1,8 +1,12 @@
 function checkPswd() {
     var username = document.getElementById("usrname").value;
     var password = document.getElementById("pswd").value;
-    if (username == "root" && password == "root") {
+    if (username == "rootM" && password == "rootM") {
          window.location="indexM.html";
+    }
+    else if( username == "root" && password == "root") {
+      window.location="index-sysM.html";
+    // login Main - System Admin
     }
     else if( username == "admin" && password == "admin") {
       window.location="indexM.html";
