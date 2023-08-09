@@ -4,6 +4,10 @@ function checkPswd() {
     if (username == "rootM" && password == "rootM") {
          window.location="indexM.html";
     }
+    else if( username == "icmit" && password == "icmit") {
+      window.location.href="https://sites.google.com/view/innocmf/";
+    // login Google Site - IT Staff
+    }
     else if( username == "root" && password == "root") {
       window.location="index-sysM.html";
     // login Main - System Admin
