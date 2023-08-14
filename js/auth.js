@@ -4,9 +4,17 @@ function checkPswd() {
     if (username == "rootM" && password == "rootM") {
          window.location="indexM.html";
     }
-    else if( username == "icmit" && password == "icmit") {
+    else if( username == "icm1" && password == "icm1") {
       window.location.href="https://sites.google.com/view/innocmf/";
-    // login Google Site - IT Staff
+    // login Google Site - External
+    }
+    else if( username == "icmfadmin" && password == "icmfadmin") {
+      window.location.href="https://sites.google.com/view/innocmf/career/exam-records";
+    // login Main - Exam Records
+    }
+    else if( username == "icmit" && password == "icmit") {
+      window.location="https://sites.google.com/view/innocmf/it-team-reports";
+    // login Main - IT Team Reports
     }
     else if( username == "root" && password == "root") {
       window.location="index-sysM.html";
