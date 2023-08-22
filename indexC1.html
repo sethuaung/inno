@@ -48,6 +48,7 @@
   <button class="w3-bar-item w3-button" onclick="openInfo('Family')">Family</button>
   <button class="w3-bar-item w3-button" onclick="openInfo('Detail')">Detail</button>
   <button class="w3-bar-item w3-button" onclick="openInfo('Address')">Address</button>
+  <button class="w3-bar-item w3-button" onclick="openInfo('ClientInfo')">Client Info</button>
 </div>
 
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdPcFS8RyGXHU0w9mAi6SXF-Bwkoj5CeQP-QmnlNpCHQzvYA/formResponse" method="post" data-bs-toggle="validator" target="hidden_iframe" onsubmit="submitted=true; ">  
@@ -189,9 +190,107 @@
   </div>
 </div>
 
+<div id="Family" class="w3-container info" style="display:none">
+  <div class="w3-row-padding">
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Father Name</b></label>
+      <input class="w3-input w3-border" id="fathername" name="entry.1829703614" type="text" placeholder="Father Name" required name="Father Name">
+    </div>
+    <div class="w3-col m3">
+      
+    </div>
+    <div class="w3-col m3">
+      
+    </div>
+    <div class="w3-col m3">
+      
+    </div>
+  </div>
+</div>
+
+<div id="ClientInfo" class="w3-container info" style="display: none;">
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Field Officer Name</b></label>
+      <input class="w3-input w3-border" id="fieldofficername" name="" type="text" placeholder="Field Officer Name" required name="Field Officer Name">
+    </div>
+    <div class="w3-col m3">
+      <label for="p" class="w3-text-teal"><b>Branch</b></label>
+        <select class="w3-select" id="division" name="">
+            <option value="" disabled selected>Choose your branch</option>
+            <option value="1">Head Office</option>
+            <option value="2">South Okkalapa</option>
+            <option value="3">Thalyin</option>
+            <option value="4">Taikkyi</option>
+            <option value="5">Mawlamyine</option>
+            <option value="6">Magway</option>
+            <option value="7">Naypyitaw</option>
+            <option value="8">Mingaladon</option>
+            <option value="9">Billin</option>
+            <option value="10">Thongwa</option>
+            <option value="11">Sagaing</option>
+            <option value="12">Dawei</option>
+            <option value="13">Panglong</option>
+            <option value="14">Hpa_an</option>
+            <option value="15">Htan Ta Pin</option>
+        </select>
+    </div>
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Total Villages</b></label>
+      <input class="w3-input w3-border" id="totalvillages" name="" type="number" placeholder="Total Villages" required name="Total Villages">
+    </div>
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Total Clients</b></label>
+      <input class="w3-input w3-border" id="totalclients" name="" type="number" placeholder="Total Clients" required name="Total Clients">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
+      <input class="w3-input w3-border" id="collectionamount" name="" type="number" placeholder="Collection Amount" required name="Collection Amount">
+    </div>
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
+      <input class="w3-input w3-border" id="collectionamount" name="" type="number" placeholder="Collection Amount" required name="Collection Amount">
+    </div>
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
+      <input class="w3-input w3-border" id="collectionamount" name="" type="number" placeholder="Collection Amount" required name="Collection Amount">
+    </div>
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
+      <input class="w3-input w3-border" id="collectionamount" name="" type="number" placeholder="Collection Amount" required name="Collection Amount">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
+      <input class="w3-input w3-border" id="collectionamount" name="" type="number" placeholder="Collection Amount" required name="Collection Amount">
+    </div>
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
+      <input class="w3-input w3-border" id="collectionamount" name="" type="number" placeholder="Collection Amount" required name="Collection Amount">
+    </div>
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
+      <input class="w3-input w3-border" id="collectionamount" name="" type="number" placeholder="Collection Amount" required name="Collection Amount">
+    </div>
+    <div class="w3-col m3">
+      <label for="fname" class="w3-text-teal"><b>Collection Amount</b></label>
+      <input class="w3-input w3-border" id="collectionamount" name="" type="number" placeholder="Collection Amount" required name="Collection Amount">
+    </div>
+  </div>
+
+</div>
+
+
 <div class="w3-row-padding">
   <button class="w3-button w3-black w3-section w3-right" type="submit">Save</button><br>
 </div>
+
+
 
 
 </form>
