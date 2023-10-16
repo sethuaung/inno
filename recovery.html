@@ -1,0 +1,179 @@
+0<!DOCTYPE html>
+<html>
+<head>
+<title>Collection Template</title>
+<meta charset="UTF-8">
+<!-- Define keywords for search engines: -->
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<!-- Define a description of your web page: -->
+<meta name="description" content="Felixent's Web Templates for HTML and CSS">
+<!-- Define the author of a page: -->
+<meta name="author" content="Mosquito">
+<!-- Refresh document every 30 seconds: -->
+<!-- <meta http-equiv="refresh" content="30"> -->
+<!-- Setting the viewport to make your website look good on all devices: -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Favicons -->
+<link href="images/logo/inno-logo.ico" rel="icon">
+<link href="images/logo/sg_logo_200x200.png" rel="felix-logo">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>ICM</b> Inno Capital Microfinance</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="https://sites.google.com/view/innocmf" class="w3-bar-item w3-button">Home</a>
+      <a href="dcr.html" class="w3-bar-item w3-button">Report</a>
+      <a href="dcrr.html" class="w3-bar-item w3-button">Report-Records</a>
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="w3-container">
+  <h2>Collection Report</h2>
+  <p></p>
+  </div>
+  <div class="w3-bar w3-black">
+    <p class="w3-bar-item w3-button" onclick="openInfo('ClientInfo')">Recovery Actual Overdue Discussion Report</p>
+  </div>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSdFT1wMW270v3m25CIDI4mIEjtWF4fTvyfKGcTmLp0XVE64Zw/formResponse" method="post" data-bs-toggle="validator" target="hidden_iframe" onsubmit="submitted=true; ">  
+    <div id="ClientInfo" class="w3-container info" style="display: none;">
+    <div class="w3-row-padding w3-padding-16">
+      <div class="w3-col m3">
+        <label for="fname" class="w3-text-teal"><b>Sr</b></label>
+        <input class="w3-input w3-border" id="No" name="entry.998128023" type="No" placeholder="No" required name="No">
+      </div>
+      
+        
+          <div class="w3-col m3">
+            <label for="p" class="w3-text-teal"><b>Branch Name</b></label>
+              <select class="w3-select" id="division" name="entry.1522768232">
+                  <option value="Thanlyin Branch" disabled selected>Choose your branch</option>
+                  <option value="Head Office">Head Office</option>
+                  <option value="South Okkalapa">South Okkalapa</option>
+                  <option value="Thanlyin">Thalyin</option>
+                  <option value="Taikkyi">Taikkyi</option>
+                  <option value="Mawlamyine">Mawlamyine</option>
+                  <option value="Magway">Magway</option>
+                  <option value="Naypyitaw">Naypyitaw</option>
+                  <option value="Mingaladon">Mingaladon</option>
+                  <option value="Billin">Billin</option>
+                  <option value="Thongwa">Thongwa</option>
+                  <option value="Sagaing">Sagaing</option>
+                  <option value="Dawei">Dawei</option>
+                  <option value="Panglong">Panglong</option>
+                  <option value="Hpa_an">Hpa_an</option>
+                  <option value="Htan Ta Pin">Htan Ta Pin</option>
+              </select>
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Date</b></label>
+            <input class="w3-input w3-border" id="date" name="entry.416873398" type="date" placeholder="collectiondate" required name="Date">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Villages/Ward Name</b></label>
+            <input class="w3-input w3-border" id="villages" name="entry.1389707766" type="villages" placeholder="Villages/Ward Name" required name="Villages/Ward Name">
+          </div>       
+        </div>
+      
+        <div class="w3-row-padding w3-padding-16">
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Disb'Date</b></label>
+            <input class="w3-input w3-border" id="date" name="entry.1899751166" type="date" placeholder="Date" required name="Disb'Date">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal">Total Clients<b></b></label>
+            <input class="w3-input w3-border" id="clients" name="entry.1795269921" type="clients" placeholder="Total Clients" required name="Total Clients">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Total Overdue Amount</b></label>
+            <input class="w3-input w3-border" id="amount" name="
+            entry.1883646994" type="amount" placeholder="Total Overdue Amount" required name="Total Overdue Amount">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Actual Discussion Clients</b></label>
+            <input class="w3-input w3-border" id="clients" name="entry.1834905682" type="clients" placeholder="Actual Discussion Clients" required name="Actual Discussion Clients">
+          </div>
+          
+        </div>
+      
+        <div class="w3-row-padding w3-padding-16">
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Actual Discussion Overdue Amount</b></label>
+            <input class="w3-input w3-border" id="amount" name="entry.1327269423" type="amount" placeholder="Actual Discussion Overdue Amount" required name="Actual Discussion Overdue Amount">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Discussion Result</b></label>
+            <input class="w3-input w3-border" id="result" name="entry.909559344" type="result" placeholder="Discussion Result" required name="Discussion Result">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Remaining Clients</b></label>
+            <input class="w3-input w3-border" id="clients" name="entry.632430961" type="clients" placeholder="Remaining Clients" required name="Remaining Clients">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Remaining Clients OV Amount</b></label>
+            <input class="w3-input w3-border" id="amount" name="entry.940737456" type="amount" placeholder="Remaining Clients OV Amount" required name="Remaining Clients OV Amount">
+         </div>
+        
+        </div>
+        <div class="w3-row-padding w3-padding-16">
+        <div class="w3-col m3">
+        <label for="fname" class="w3-text-teal"><b>New Appointment Date</b></label>
+            <input class="w3-input w3-border" id="date" name="entry.249372254" type="date" placeholder="New Appointment Date" required name="New Appointment Date">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Reason</b></label>
+            <input class="w3-input w3-border" id="reason" name="entry.770844159" type="reason" placeholder="Reason" required name="Reason">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>Contact Person Name</b></label>
+            <input class="w3-input w3-border" id="name" name="entry.1231655050" type="name" placeholder="Contact Person Name" required name="Contact Person Name">
+          </div>
+          <div class="w3-col m3">
+            <label for="fname" class="w3-text-teal"><b>PH No</b></label>
+            <input class="w3-input w3-border" id="no" name="entry.1910474144" type="no" placeholder="PH No" required name="PH No">
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding">
+        <button class="w3-button w3-black w3-section w3-right" type="submit">Save</button><br>
+      </div>
+    </div>
+      </form>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='recovery.html';}"></iframe>
+    </div>
+      <script>
+        function clickqq() {
+          alert("Let's go Babe!");
+        }
+        </script>
+      <script>
+      function openInfo(infoName) {
+        var i;
+        var x = document.getElementsByClassName("info");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        document.getElementById(infoName).style.display = "block";  
+      }
+      </script>
+      
+      <!-- End page content -->
+      </div>
+      <!-- Footer -->
+      <footer class="w3-center w3-black w3-padding-16">
+        <p class="w3-small">Themes Designed by <a href="https://sethuaung.github.io" title="mosquito" target="_blank" class="w3-hover-text-green">mosquito</a></p>
+        <p class="w3-small"><a href="t&c.html">Terms & Conditions</a></p>
+      </footer>
+      
+      </body>
+      </html>
