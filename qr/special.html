@@ -2,10 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Define keywords for search engines: -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!-- Define a description of your web page: -->
+    <meta name="description" content="Felixent's Web Templates for HTML and CSS">
+    <!-- Define the author of a page: -->
+    <meta name="author" content="Mosquito">
+    <!-- Refresh document every 30 seconds: -->
+    <meta http-equiv="refresh" content="30">
+    <!-- Redirect document after 30 seconds: -->
+    <!-- <meta http-equiv="refresh" content="30;URL='https://www.google.com/'" /> -->
+    <!-- Setting the viewport to make your website look good on all devices: -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Favicons -->
+    <link href="images/logo/inno-logo.ico" rel="icon">
+    <link href="images/logo/inno-fav.jpg" rel="felix-logo">
     <title>Special QR code formats</title>
 </head>
-<body>
+<body class="w3-content w3-padding" style="max-width:1564px">
     <!-- @TODO: add styles to make it prettier -->
     <h1>Special QR code formats</h1>
     <p>There are some special QR code formats, that can be used to embed links, instructions to send a mail or SMS, WLAN credentials, etc in them.
@@ -16,7 +35,7 @@
     <p>When you scan it with a phone, you will visit / be offered to visit the linked website</p>
     <p>Format: <code>${URL}</code></p>
     <h3>Generator</h3>
-    <label>Link: </label><input data-demo="link" value="https://qr.15c.me/qr.html"></label>
+    <label>Link: </label><input data-demo="link" value="https://felixent.net"></label>
     <div id="div-link"></div>
     
     <h2>WLAN network</h2>
@@ -25,7 +44,7 @@
     <h3>Generator</h3>
     <label>Network name (SSID): </label><input id="wlan-ssid" data-demo="wlan" value="My Home Network"></label>
     <br>
-    <label>Password: </label><input id="wlan-password" data-demo="wlan" value="Monkey123!"></label>
+    <label>Password: </label><input id="wlan-password" data-demo="wlan" value="Mosquito123!"></label>
     <div id="div-wlan"></div>
 
     <script>

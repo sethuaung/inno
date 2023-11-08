@@ -23,6 +23,63 @@
 <!-- Favicons -->
 <link href="images/logo/inno-logo.ico" rel="icon">
 <link href="images/logo/inno-fav.jpg" rel="felix-logo">
+<div class="title">QR code generators - Felixent</div>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    h1,h2 {
+        text-align: center;
+    }
+
+    body {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    header {
+        width: 100%;
+        height: 40px;
+        background-color: #444;
+        color: lightgray;
+        display: flex;
+        font-size: 25px;
+        padding: 7px;
+    }
+
+    header a {
+        color: lightgray;
+        margin-right: 20px;
+    }
+
+    .expand {
+        flex: 1;
+    }
+
+    iframe {
+        margin: auto;
+        margin-top: 10px;
+        width: 90%;
+        height: 800px;
+        max-height: 80vh;
+    }
+
+    hr {
+        color: black;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    p {
+        width: 90%;
+        margin: auto;
+    }
+</style>
 </head>
 <body>
 
@@ -64,7 +121,26 @@
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
   <h2 style="text-align: center;"><b>QR-GENERATOR</b></h2>
+  <h1>Previews</h1>
+  <!-- @TODO: rewrite -->
+  <p>This page offers fully interactive previews of my QR code generators.
+  They are entirely free and open source and do all the work in your browser.
+  This means the text you type will not be sent to a remote server.
+  It also enables you to download them and use them on a computer not connected to the internet.
+  You can click the link above a preview to jump to the corresponding website.</p>
 
+  <hr>
+  <h2><a href="qr/qr.html">Recommended QR code generator</a></h2>
+  <p>This QR code generator offers some convenience features such as being able to drag & drop (or copy-paste) a file into the textbox. If the browser supports it (and you allow it), it can also constantly monitor the systems clipboard and generate a QR code from the clipboard's contents.
+  (<a href="qr/qr.html" download>Download</a>)</p>
+  
+  <iframe src="qr/qr.html"></iframe>
+
+  <hr>
+  <h2><a href="qr/tiny-qr.html">Tiny QR code generator</a></h2>
+  <p>This QR code generator is designed to be as small as possible and thus offers significantly fewer features.
+  (<a href="qr/tiny-qr.html" download>Download</a>)</p>
+  <iframe src="qr/tiny-qr.html"></iframe>
 <!-- End page content -->
 </div>
 
