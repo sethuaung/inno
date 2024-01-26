@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Felixent: Room Reservation. </title>
+<meta charset="UTF-8">
+<!-- Define keywords for search engines: -->
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<!-- Define a description of your web page: -->
+<meta name="description" content="Felixent's Web Templates for HTML and CSS">
+<!-- Define the author of a page: -->
+<meta name="author" content="Mosquito">
+<!-- Refresh document every 30 seconds: -->
+<meta http-equiv="refresh" content="30">
+<!-- Redirect document after 30 seconds: -->
+<!-- <meta http-equiv="refresh" content="30;URL='https://www.google.com/'" /> -->
+<!-- Setting the viewport to make your website look good on all devices: -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Favicons -->
+<link href="images/logo/inno-logo.ico" rel="icon">
+<link href="images/logo/inno-fav.jpg" rel="felix-logo">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>ICM</b> Inno Capital Microfinance</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <!-- <a href="indexM.html#project1" class="w3-bar-item w3-button">Products</a> -->
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <button onclick="document.getElementById('idadm').style.display='block'" class="w3-button w3-green w3-large">Admin Login</button>
+    <div id="idadm" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+        <div class="w3-center"><br>
+          <span onclick="document.getElementById('idadm').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+          <img src="images/logo/inno-fav.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+        </div>
+        <form class="w3-container" action="index-sysM.html">
+          <div class="w3-section">
+            <label><b>Username</b></label>
+            <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+            <label><b>Password</b></label>
+            <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+            <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+            <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+          </div>
+        </form>
+        <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+          <button onclick="document.getElementById('idadm').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+          <span class="w3-right w3-padding w3-hide-small">Forgot <a href="indexM.html#contact">password?</a></span>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <h2 style="text-align: center;"><b>ICM : Meeting Rooms</b></h2>
+<!-- Photo Grid-->
+<div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/room/r1.jpg" alt="room1" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p><ul class="w3-ul w3-border">
+          <li><h2>Room-1</h2></li>
+          <li>12-Persons</li>
+          <li>Presentation Screen</li>
+          <li>Available from 09:00AM - 04:00PM</li>
+        </ul></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/room/r2.jpg" alt="room2" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p><ul class="w3-ul w3-border">
+          <li><h2>Room-2</h2></li>
+          <li>12-Persons</li>
+          <li>Presentation Screen</li>
+          <li>Available from 09:00AM - 04:00PM</li>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/room/r3.jpg" alt="room3" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p><ul class="w3-ul w3-border">
+          <li><h2>Room-3</h2></li>
+          <li>12-Persons</li>
+          <li>Presentation Screen</li>
+          <li>Available from 09:00AM - 04:00PM</li>
+        </div>
+    </div>
+  </div>
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p class="w3-small">Themes Designed by <a href="https://sethuaung.github.io" title="mosquito" target="_blank" class="w3-hover-text-green">mosquito</a></p>
+  <p class="w3-small"><a href="t&c.html">Terms & Conditions</a></p>
+</footer>
+</body>
+</html>
