@@ -35,6 +35,7 @@
       <!-- <a href="indexM.html#project1" class="w3-bar-item w3-button">Products</a> -->
       <a href="index.html" class="w3-bar-item w3-button">HOME</a>
       <a href="room.html" class="w3-bar-item w3-button">ROOM</a>
+      <a href="jitsi.html" class="w3-bar-item w3-button">Jitsi</a>
     <button onclick="document.getElementById('idadm').style.display='block'" class="w3-button w3-green w3-large">Admin Login</button>
     <div id="idadm" class="w3-modal">
       <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
@@ -67,41 +68,99 @@
   <h2 style="text-align: center;"><b>ICM : Meeting Rooms</b></h2>
 <!-- Photo Grid-->
 <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/room/r1.jpg" alt="room1" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p><ul class="w3-ul w3-border">
-          <li><h2>Room-1</h2></li>
-          <li>12-Persons</li>
-          <li>Presentation Screen</li>
-          <li>Available from 09:00AM - 04:00PM</li>
-        </ul></p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="images/room/r2.jpg" alt="room2" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p><ul class="w3-ul w3-border">
-          <li><h2>Room-2</h2></li>
-          <li>12-Persons</li>
-          <li>Presentation Screen</li>
-          <li>Available from 09:00AM - 04:00PM</li>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="images/room/r3.jpg" alt="room3" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p><ul class="w3-ul w3-border">
-          <li><h2>Room-3</h2></li>
-          <li>12-Persons</li>
-          <li>Presentation Screen</li>
-          <li>Available from 09:00AM - 04:00PM</li>
-        </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="w3-center"><img src="images/room/r1.jpg" alt="room1" style="width:300px; height: 300px; border-radius: 20px;" class="w3-hover-opacity"></div>
+    <div class="w3-container w3-white">
+      <div class="w3-center"><p><b>Lorem Ipsum</b></p></div>
+      <p><ul class="w3-ul w3-border">
+        <li><h2>Room-1</h2></li>
+        <li>12-Persons</li>
+        <li>Presentation Screen</li>
+        <li>Available from 09:00AM - 04:00PM</li>
+        <li><button onclick="window.location.href='room.html';" style="color: white; background-color: green;">Reserve now</button></li>
+      </ul></p>
     </div>
   </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="w3-center"><img src="images/room/r2.jpg" alt="room2" style="width: 300px; height: 300px; border-radius: 20px;" class="w3-hover-opacity"></div>
+    <div class="w3-container w3-white">
+      <div class="w3-center"><p><b>Lorem Ipsum</b></p></div>
+      <p><ul class="w3-ul w3-border">
+        <li><h2>Room-2</h2></li>
+        <li>4-Persons</li>
+        <li>Presentation Screen</li>
+        <li>Available from 09:00AM - 04:00PM</li>
+        <li><button onclick="window.location.href='room.html';" style="color: white; background-color: green;">Reserve now</button></li>
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <div class="w3-center"><img src="images/room/r3.jpg" alt="room3" style="width: 300px; height: 300px; border-radius: 20px;" class="w3-hover-opacity"></div>
+    <div class="w3-container w3-white">
+      <div class="w3-center"><p><b>Lorem Ipsum</b></p></div>
+      <p><ul class="w3-ul w3-border">
+        <li><h2>Room-3</h2></li>
+        <li>8-Persons</li>
+        <li>Presentation Screen</li>
+        <li>Available from 09:00AM - 04:00PM</li>
+        <li><button onclick="window.location.href='room.html';" style="color: white; background-color: green;">Reserve now</button></li>
+      </div>
+  </div>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="w3-center"><img src="images/room/r1.jpg" alt="room4" style="width: 300px; height: 300px; border-radius: 20px;" class="w3-hover-opacity"></div>
+    <div class="w3-container w3-white">
+      <div class="w3-center"><p><b>Lorem Ipsum</b></p></div>
+      <p><ul class="w3-ul w3-border">
+        <li><h2>Room-4</h2></li>
+        <li>12-Persons</li>
+        <li>Presentation Screen</li>
+        <li>Available from 09:00AM - 04:00PM</li>
+        <li><button onclick="window.location.href='room.html';" style="color: white; background-color: green;">Reserve now</button></li>
+      </ul></p>
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom">
+    <div class="w3-center"><img src="images/room/r2.jpg" alt="room5" style="width: 300px;height: 300px; border-radius: 20px;" class="w3-hover-opacity"></div>
+      <div class="w3-container w3-white">
+      <div class="w3-center"><p><b>Lorem Ipsum</b></p></div>
+      <p><ul class="w3-ul w3-border">
+        <li><h2>Room-5</h2></li>
+        <li>4-Persons</li>
+        <li>Presentation Screen</li>
+        <li>Available from 09:00AM - 04:00PM</li>
+        <li><button onclick="window.location.href='room.html';" style="color: white; background-color: green;">Reserve now</button></li>
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <div class="w3-center"><img src="images/room/r3.jpg" alt="room6" style="width: 300px; height: 300px; border-radius: 20px;" class="w3-hover-opacity"></div>
+    <div class="w3-container w3-white">
+      <p><b>Lorem Ipsum</b></p>
+      <p><ul class="w3-ul w3-border">
+        <li><h2>Room-6</h2></li>
+        <li>8-Persons</li>
+        <li>Presentation Screen</li>
+        <li>Available from 09:00AM - 04:00PM</li>
+        <li><button onclick="window.location.href='room.html';" style="color: white; background-color: green;">Reserve now</button></li>
+      </div>
+  </div>
+</div>
+
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin">
+    <div class="w3-center"><img src="images/room/r3.jpg" alt="room7" style="width: 300px;height: 300px; border-radius: 20px; " class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Lorem Ipsum</b></p></div></div>
+      <p><ul class="w3-ul w3-border">
+        <li><h2>Room-7</h2></li>
+        <li>8-Persons</li>
+        <li>Presentation Screen</li>
+        <li>Available from 09:00AM - 04:00PM</li>
+        <li><button onclick="window.location.href='room.html';" style="color: white; background-color: green;">Reserve now</button></li>
+  </div>
+  
+</div>
 <!-- End page content -->
 </div>
 <!-- Footer -->
